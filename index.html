@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自宅を探検</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <h1>自宅を探検</h1>
+            <nav class="nav">
+                <a href="#" class="nav-item active" data-section="photo">photo</a>
+                <a href="#" class="nav-item" data-section="introdaction">introdaction</a>
+                <a href="#" class="nav-item" data-section="profile">profile</a>
+            </nav>
+        </div>
+    </header>
+
+<main class="container">
+
+    <section id="photo-section" class="content-section active">
+        <div class="slider-wrapper">
+            <button class="slider-arrow prev" onclick="moveSlide('photo', -1)">＜</button>
+            <div class="slider" id="photo-slider">
+                <div class="slide-item"><img src="images/1.jpg" alt="自宅の写真1" onerror="this.style.display='none'"></div>
+                <div class="slide-item"><img src="images/2.jpg" alt="自宅の写真2" onerror="this.style.display='none'"></div>
+                <div class="slide-item"><img src="images/3.jpg" alt="自宅の写真3" onerror="this.style.display='none'"></div>
+                <div class="slide-item"><img src="images/4.jpg" alt="自宅の写真4" onerror="this.style.display='none'"></div>
+                <div class="slide-item"><img src="images/5.jpg" alt="自宅の写真5" onerror="this.style.display='none'"></div>
+                <div class="slide-item"><img src="images/6.jpg" alt="自宅の写真6" onerror="this.style.display='none'"></div>
+                <div class="slide-item"><img src="images/7.jpg" alt="自宅の写真7" onerror="this.style.display='none'"></div>
+                <div class="slide-item"><img src="images/8.jpg" alt="自宅の写真8" onerror="this.style.display='none'"></div>
+                <div class="slide-item"><img src="images/9.jpg" alt="自宅の写真9" onerror="this.style.display='none'"></div>
+                <div class="slide-item"><img src="images/10.jpg" alt="自宅の写真10" onerror="this.style.display='none'"></div>
+                <div class="slide-item"><img src="images/11.jpg" alt="自宅の写真11" onerror="this.style.display='none'"></div>
+            </div>
+            <button class="slider-arrow next" onclick="moveSlide('photo', 1)">＞</button>
+        </div>
+    </section>
+
+    <section id="introdaction-section" class="content-section">
+        <div class="slider-wrapper">
+            <button class="slider-arrow prev" onclick="moveSlide('introdaction', -1)">＜</button>
+            <div class="slider intro-slider" id="introdaction-slider">
+
+                   <div class="slide-item intro-slide">
+                    <img src="images/1.jpg" alt="紹介画像3" class="intro-image" onerror="this.style.display='none'">
+                    <div class="intro-text-area">
+                        <p>間と静(ま、せい)</p>
+                        <p>噴水や煌びやかな装飾が多い<br>
+                        西洋の建築に対し、<br>
+                        日本の建築は、獅子脅しや<br>
+                        空気や雰囲気を感じる'間'の空間が<br>
+                        特徴的である</p>
+                    </div>
+                </div>
+
+                <div class="slide-item intro-slide">
+                    <img src="images/2.jpg" alt="紹介画像1" class="intro-image" onerror="this.style.display='none'">
+                    <div class="intro-text-area">
+                        <p>鳳凰モチーフの置物</p>
+                        <p>伝説に登場する縁起のいい霊鳥<br>
+                        で、縁起がいいとされている</p>
+                        <p>平和、幸運、繁栄の象徴とされ<br>
+                        めでたいことが起きる前兆に現<br>れる</p>
+                    </div>
+                </div>
+
+                <div class="slide-item intro-slide">
+                    <img src="images/4.jpg" alt="紹介画像2" class="intro-image" onerror="this.style.display='none'">
+                    <div class="intro-text-area">
+                        <p>七福神の絵画</p>
+                        <p>日本の神道や仏教に由来する<br>
+                        7人の神々で、幸福や繁栄を<br>
+                        もたらすとされる</p>
+                        <p>それぞれの神は特定の幸運<br>
+                        や繁栄の象徴とされ、商売<br>
+                        繁盛や家庭円満を願う人々に<br>
+                        信仰されている</p>
+                    </div>
+                </div>
+
+                <div class="slide-item intro-slide">
+                    <img src="images/6.jpg" alt="紹介画像3" class="intro-image" onerror="this.style.display='none'">
+                    <div class="intro-text-area">
+                        <p>寿量富(じょうりょうふ)</p>
+                        <p>「寿量富」とは、長寿と豊かさを<br>
+                        意味する言葉で、人生の幸福と<br>
+                        繁栄を象徴する</p>
+                        <p>この言葉は、長寿を願う人々に<br>
+                        とって特に重要で、健康で<br>
+                        幸せな人生を送ることを願う<br>
+                        意味が込められている</p>
+                    </div>
+                </div>
+
+            </div>
+            <button class="slider-arrow next" onclick="moveSlide('introdaction', 1)">＞</button>
+        </div>
+    </section>
+
+
+        <section id="profile-section" class="content-section">
+    <div class="profile-layout">
+       <img src="images/pro.jpg" alt="プロフィール画像" class="profile-image">
+        <div class="profile-text">
+            <p>閲覧いただきありがとうございました!</p>
+            <p>この web サイトは、身近にあるものの魅力を伝えることを目的としています。</p>
+            <p>自宅の写真を撮影し、紹介文を作成しました。</p>
+            <p>このサイトを通じて、日常の中にある美しさや楽しさを感じていただければ幸いです。</p>
+            <p></p>
+            <p>制作者</p>
+            <p>九州産業大学 芸術学部 2年 松崎菜々実</p>
+            <p>永遠のたけのこの里派です！</p>
+    </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

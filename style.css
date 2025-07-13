@@ -1,0 +1,209 @@
+/* すべてのテキストに明朝体フォントを適用します */
+body {
+    font-family: 'Noto Serif JP', '游明朝', 'Yu Mincho', 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* ヘッダーのスタイル */
+.header {
+    background-color: #9C0000; /* 赤色の背景 */
+    color: white;
+    padding: 10px 0;
+    border-bottom: 2px solid black;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 5px 10px;
+}
+
+.nav-item.active {
+    /* 現在アクティブな項目は下線を引くなど、視覚的に強調できます */
+    /* border-bottom: 2px solid white; */
+    font-weight: bold;
+}
+
+/* コンテンツエリア */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    min-height: 80vh; /* 画面の高さを確保 */
+}
+
+/* セクションの表示/非表示を制御 */
+.content-section {
+    display: none;
+    min-height: 600px; 
+}
+
+.content-section.active {
+    display: flex;
+    justify-content: center; /* 水平方向の中央 */
+    align-items: center; /* 垂直方向の中央 */
+    height: 70vh; 
+}ß
+
+/* 緑色の四角形のプレースホルダー */
+.green-placeholder {
+    width: 600px; /* 画像の幅 */
+    height: 400px; /* 画像の高さ */
+    background-color: #00FF00; /* 緑色 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+    border: 1px solid #000;
+}
+
+/* ======================= */
+/* Photo & Introdaction Sliders */
+/* ======================= */
+
+.slider-wrapper {
+    position: relative;
+    max-width: 800px; /* スライダー全体の幅を設定 */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    display: flex;
+    overflow-x: hidden; /* スライドを隠す */
+    scroll-behavior: smooth;
+    width: 100%;
+    margin: 0 50px; /* 矢印との間隔 */
+}
+
+.slide-item {
+    flex: 0 0 100%; /* 各スライドはコンテナの幅いっぱいに広がる */
+    text-align: center;
+}
+/* style.css にあるはずのコード */
+#photo-section .slide-item img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover; 
+}
+
+/* ... (既存のコード) ... */
+
+/* スライダーの矢印ボタン */
+.slider-arrow {
+    /* 矢印のデザインをスタイリッシュに */
+    background-color: rgba(255, 255, 255, 0.7); /* 少し透けた白い背景 */
+    border: 1px solid #ccc; /* 薄いグレーの枠線 */
+    border-radius: 50%; /* 丸い形 */
+    width: 40px; /* サイズ */
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* 矢印の文字色とサイズを調整 */
+    font-size: 1.5em; 
+    color: #666; /* 控えめなグレー */
+    cursor: pointer;
+    transition: all 0.3s ease; /* ホバー時の変化を滑らかに */
+    
+    /* 位置を絶対指定して、スライダーの端に配置 */
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%); /* 垂直方向の中央に配置 */
+}
+
+/* 矢印のホバー時のエフェクト */
+.slider-arrow:hover {
+    background-color: #eee;
+    color: #333;
+    border-color: #666;
+}
+
+/* 左右の矢印の位置調整 */
+.slider-arrow.prev {
+    left: -20px; /* 左端から少し外側に配置 */
+}
+
+.slider-arrow.next {
+    right: -20px; /* 右端から少し外側に配置 */
+}
+
+/* ... (既存のコード) ... */
+
+/* ======================= */
+/* Introdaction Specific Styles */
+/* ======================= */
+
+.intro-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; 
+}
+
+.intro-image {
+    width: 400px;
+    height: 300px;
+}
+
+.intro-text-area {
+    /* 説明文エリアの幅を画像と同じ400pxに */
+    width: 400px; 
+    height: 300px; 
+    /* 緑色の枠線を削除 */
+    border: none; 
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+/* ======================= */
+/* Profile Specific Styles */
+/* ======================= */
+
+.profile-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.profile-image {
+    width: 400px;
+    height: 400px;
+}
+
+.profile-text {
+    width: 500px;
+    text-align: left;
+    line-height: 1.8;
+}
